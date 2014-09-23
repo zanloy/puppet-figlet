@@ -1,5 +1,5 @@
 {
-  "name": "figlet",
+  "name": "zanloy-figlet",
   "version": "0.1.0",
   "author": "zanloy",
   "summary": "Puppet module to install figlet and allow for figlet access in other modules",
