@@ -76,10 +76,14 @@ pretty banner in your motd file:
 
 ## Reference
 
-Here, list the classes, types, providers, facts, etc contained in your module.
-This section should include all of the under-the-hood workings of your module so
-people know what the module is touching on their system but don't need to mess
-with things. (We are working on automating this section!)
+The figlet module create one function and two facts.
+
+    figlet($string, $font, $width)
+
+Facts (should only be relavent on the puppet master):
+
+    figlet_fonts (comma separated string of fonts installed on node)
+    figlet_fonts_array (array of fonts installed)
 
 ## Limitations
 
