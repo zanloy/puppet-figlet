@@ -4,10 +4,6 @@ class figlet::install(
 
   if $::osfamily == 'Redhat' {
 
-    if ! defined(Class['repoforge']) {
-      fail("To install figlet in RedHat, you need to also install repoforge module: puppet module install yguenane/repoforge")
-    }
-
     include repoforge
 
     package { $package:

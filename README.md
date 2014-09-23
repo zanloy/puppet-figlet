@@ -45,7 +45,7 @@ installed on agents to use the function.
 * To install figlet on RedHat based systems, you will also need the
   rpmforge repository. If you plan to use the "include figlet::install"
   method of installation on a RedHat system, then you need to have the
-  (yguenane/repoforge)[https://forge.puppetlabs.com/yguenane/repoforge]
+  [yguenane/repoforge](https://forge.puppetlabs.com/yguenane/repoforge)
   module installed and setup. There is a direct dependency to
   Yumrepo['rpmforge'] and **will fail** if this is not in the catalog.
 
