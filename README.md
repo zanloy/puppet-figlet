@@ -80,7 +80,7 @@ The figlet module create one function and two facts.
 
     figlet($string, $font, $width)
 
-Facts (should only be relavent on the puppet master):
+Facts (should only be relevant on the puppet master):
 
     figlet_fonts (comma separated string of fonts installed on node)
     figlet_fonts_array (array of fonts installed)
