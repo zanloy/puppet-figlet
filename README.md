@@ -43,11 +43,11 @@ installed on agents to use the function.
 * figlet sets up a function and several facts so it will require that
   pluginsync is enabled.
 * To install figlet on RedHat based systems, you will also need the
-  rpmforge repository. If you plan to use the "include figlet::install"
+  repoforge repository. If you plan to use the "include figlet::install"
   method of installation on a RedHat system, then you need to have the
   [yguenane/repoforge](https://forge.puppetlabs.com/yguenane/repoforge)
   module installed and setup. There is a direct dependency to
-  Yumrepo['rpmforge'] and **will fail** if this is not in the catalog.
+  Yumrepo['repoforge'] and **will fail** if this is not in the catalog.
 
 ### Beginning with figlet
 
@@ -66,9 +66,9 @@ definition)
 
     include figlet::install
 
-The figlet modules does not have any declarable classes on it's own. It is
+The figlet modules does not have any declarable classes on its own. It is
 designed to be used in other modules. A good example of this is to setup a
-pretty banner in your motd file:
+figlet banner in your motd file:
 
     file { '/etc/motd':
       content => figlet("$::hostname"),
@@ -87,10 +87,13 @@ Facts (should only be relevant on the puppet master):
 
 ## Limitations
 
-This module has only been tested on Ubuntu based systems cureently but should
-work on RedHat as well.
+This module has only been tested on the following distros:
+
+* Ubuntu 14.04
+* RHEL 6.5
 
 ## Development
 
 This module is pretty basic but if you have any improvements, then please add
-a new issue with tag [feature] or add it yourself and add a pull request.
+a new issue with tag [feature] or you are always welcome to add it yourself and
+send a pull request.
