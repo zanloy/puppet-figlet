@@ -12,8 +12,10 @@ Facter.add('figlet_fonts') do
   end
 end
 
-Facter.add('figlet_fonts_array') do
-  setcode do
-    entries
+if Facter.version > '2' do
+  Facter.add('figlet_fonts_array') do
+    setcode do
+      entries
+    end
   end
 end
