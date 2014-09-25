@@ -9,7 +9,7 @@ module Puppet::Parser::Functions
     # Generate command to run
     cmd = "figlet #{string}"
     cmd += " -f #{font}" if font
-    cmd += " -w 180" if width
+    cmd += " -w #{width}" if width
     # Run command
     `#{cmd}`
   end
