@@ -11,7 +11,7 @@ class figlet::params {
     }
     'Redhat': {
       $package = 'figlet'
-      $baseurl = 'http://apt.sw.be/redhat/el${::operatingsystemmajrelease}/en/${::architecture}'
+      $baseurl = "http://apt.sw.be/redhat/el${::operatingsystemmajrelease}/en/${::architecture}"
       $fontdir = '/usr/share/figlet/'
     }
     default: {

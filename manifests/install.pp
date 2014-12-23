@@ -1,3 +1,6 @@
+# This manifest is to install figlet package. It should generally
+# only be installed on the puppet master server.
+
 class figlet::install(
   $package = $figlet::params::package,
 ) inherits figlet::params {
@@ -7,7 +10,7 @@ class figlet::install(
     include repoforge
 
     package { $package:
-      ensure => present,
+      ensure  => present,
       require => Yumrepo['rpmforge'],
     }
 

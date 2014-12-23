@@ -35,7 +35,4 @@
 #
 # Copyright 2014 Your name here, unless otherwise noted.
 #
-class figlet {
-
-
-}
+class figlet { }

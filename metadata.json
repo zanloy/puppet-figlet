@@ -1,13 +1,20 @@
 {
   "name": "zanloy-figlet",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "zanloy",
   "summary": "Puppet module to install figlet and allow for figlet access in other modules",
-  "license": "Apache 2.0",
+  "license": "Apache License, Version 2.0",
   "source": "https://github.com/zanloy/puppet-figlet",
   "project_page": "https://github.com/zanloy/puppet-figlet",
   "issues_url": "https://github.com/zanloy/puppet-figlet/issues",
+  "operatingsystem_support": [
+    { "operatingsystem": "ArchLinux"},
+    { "operatingsystem": "CentOS"},
+    { "operatingsystem": "Debian"},
+    { "operatingsystem": "RedHat"},
+    { "operatingsystem": "Ubuntu"}
+  ],
   "dependencies": [
-    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+    {"name":"puppetlabs/stdlib","version_requirement":">= 3.2.0"}
   ]
 }
