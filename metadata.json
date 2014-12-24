@@ -1,9 +1,9 @@
 {
   "name": "zanloy-figlet",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "author": "zanloy",
   "summary": "Puppet module to install figlet and allow for figlet access in other modules",
-  "license": "Apache License, Version 2.0",
+  "license": "Apache-2.0",
   "source": "https://github.com/zanloy/puppet-figlet",
   "project_page": "https://github.com/zanloy/puppet-figlet",
   "issues_url": "https://github.com/zanloy/puppet-figlet/issues",
