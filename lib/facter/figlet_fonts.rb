@@ -8,14 +8,6 @@ entries = Dir.glob("#{fontdir}*.flf").map { |file| File.basename(file, '.flf') }
 
 Facter.add('figlet_fonts') do
   setcode do
-    entries.join(', ')
-  end
-end
-
-if Facter.version > '2' do
-  Facter.add('figlet_fonts_array') do
-    setcode do
-      entries
-    end
+    Facter.version > '2' ? entries : entries.join(', ')
   end
 end
